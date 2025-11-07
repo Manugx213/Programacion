@@ -1,0 +1,35 @@
+
+
+package Metodos;
+
+
+
+public class Metodo2
+
+{
+
+	public static void main(String[] args) 
+	
+	{
+		int[] vector = {5,10,15};
+		
+		for (int i=0; i<vector.length; i++) {
+			System.out.print( vector [i] + "   " );
+		}
+		// LOS OBJETOS SE PASAN POR REFERENCIA //
+		inivector(vector);
+		
+		System.out.print("\nDespues de llamar al método...\n");
+		for (int i=0; i<vector.length; i++) {
+			
+			System.out.print( "" + vector [i] + "   " );
+		}
+	}
+	
+	public static void inivector ( int[] paramV ) 
+	{
+		paramV [0]= 50;
+		paramV [1]= 100;
+	}
+
+}

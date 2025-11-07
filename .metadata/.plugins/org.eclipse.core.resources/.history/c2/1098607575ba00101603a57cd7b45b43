@@ -1,0 +1,42 @@
+
+
+package Metodos;
+
+
+public class Metodosvarios 
+{
+
+	public static void main(String[] args)
+	
+	{
+		int num;
+		boolean espar;
+		
+		num = 3;
+		espar = par(num);
+		
+		System.out.prinln (espar);
+
+		
+		
+	
+	}
+	
+	// PAR : CALCULA SI UN VALOR ES PAR. DEVUELVE UN TIPO BOOLEAN //
+	
+	public static boolean par (int num);
+	
+		boolean par;
+		
+		if (num%2==0) 
+		{
+			par = true;
+		}
+		
+		else 
+		{
+			par = false;
+		}
+	
+	return par;
+}

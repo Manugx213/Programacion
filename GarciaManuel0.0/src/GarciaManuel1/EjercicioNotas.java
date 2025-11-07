@@ -1,0 +1,25 @@
+/* MANUEL GARCIA GARCIA
+ * 5/11/2025
+ * EJERCICIO NOTAS
+ */
+
+package GarciaManuel1;
+
+import java.util.Scanner;
+public class EjercicioNotas 
+{
+
+	public static void main(String[] args)
+	
+	{
+		
+		Scanner notas = new Scanner (System.in);
+		
+		System.out.print ("Indica el numero de aciertos que has tenido en el examen: ");
+		int num1 = notas.nextInt();
+		
+		
+	
+	}
+
+}

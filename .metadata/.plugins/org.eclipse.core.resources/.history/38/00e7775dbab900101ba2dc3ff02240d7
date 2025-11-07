@@ -1,0 +1,49 @@
+/* MANUEL GARCIA GARCIA
+ * EJERCICIO 5
+ * 31-10-2025
+ */
+
+package GarciaManuel13;
+
+import java.util.Scanner;
+public class Ejercicio5 
+
+{
+
+	public static void main(String[] args)
+	
+	{
+		double num1;
+		double num2;
+		
+		Scanner programa = new Scanner (System.in);
+		
+		System.out.print ("Introduce el primer número de su elección: ");
+		num1 = programa.nextDouble();
+		
+		System.out.print ("Introduce el segundo número de su elección: ");
+		num2 = programa.nextDouble();
+		
+			if (num1 > num2)
+			{
+			System.out.println ("El numero menor es: " + num2);
+			}
+		
+			else if (num2 > num1)
+			{
+			System.out.println ("\nEl numero menor es: " + num1);
+			}
+		
+			else
+			{
+			System.out.println ("Ambos números son iguales.");
+			} 
+	
+		 num1++;
+		 
+		 System.out.println (num1);
+			
+	
+	}
+
+}

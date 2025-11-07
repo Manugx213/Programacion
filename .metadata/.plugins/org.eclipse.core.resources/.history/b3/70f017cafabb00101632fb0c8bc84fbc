@@ -1,0 +1,46 @@
+/* MANUEL GARCIA GARCIA
+ * EJERCICIO 1
+ * 5/11/2025
+ */
+
+package GarciaManuel26;
+
+import java.util.Scanner;
+public class Ejercicio3 
+
+{
+
+	public static void main(String[] args) 
+	
+	{
+	int edad;
+	String nombre;
+	String apellidos;
+	
+	Scanner programa = new Scanner (System.in);
+	
+	System.out.print("Indica tu edad: ");
+	edad = programa.nextInt();
+	
+	if ( edad >= 18) {
+		System.out.print("\nIndica tu nombre: ");
+		nombre = programa.nextLine();
+		
+		System.out.print("\nIndica tus apellidos: ");
+		apellidos = programa.nextLine();
+		
+		System.out.println("Nombre: " + nombre);
+		System.out.println("Apellidos: " + apellidos);
+		System.out.println("edad: " + edad);
+		System.out.println("");
+		System.out.println("Usted ha sido admitido");
+		
+	} else {
+		System.out.println("\nNo tiene la edad requerida para realizar estos estudios.");
+	}
+		
+	programa.close();
+	
+	}
+
+}

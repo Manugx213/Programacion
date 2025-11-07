@@ -1,0 +1,43 @@
+package GarciaManuel1;
+import java.util.Scanner;
+
+public class ej 
+{
+
+	public static void main(String[] args)
+	{
+
+		    
+		        Scanner input = new Scanner(System.in);
+
+		        // Solicitar los dos números
+		        System.out.print("Introduce el primer número: ");
+		        double num1 = input.nextDouble();
+
+		        System.out.print("Introduce el segundo número: ");
+		        double num2 = input.nextDouble();
+
+		        // Determinar cuál es menor
+		        if (num1 < num2) 
+		        {
+		            System.out.println("El número menor es: " + num1);
+		        } 
+		        
+		        else if (num2 < num1) 
+		        {
+		            System.out.println("El número menor es: " + num2);
+		        } 
+		        
+		        else 
+		        {
+		            System.out.println("Ambos números son iguales.");
+		        }
+
+		        // Cerrar el Scanner
+		        input.close();
+		    }
+		
+
+	}
+
+

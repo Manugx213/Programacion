@@ -1,0 +1,50 @@
+/* MANUEL GARCIA GARCIA
+ * EJERCICIO 1
+ * 5/11/2025
+ */
+
+
+package GarciaManuel26;
+
+import java.util.Scanner;
+public class Ejercicio2
+
+{
+
+	public static void main(String[] args)
+	
+	{
+		String nombre;
+		int edad;
+		double nota;
+		
+		Scanner programa = new Scanner (System.in);
+		
+		System.out.print("¿Como te llamas?: ");
+		nombre = programa.nextLine();
+		
+		
+		System.out.print("¿Cuantos años tienes?: ");
+		edad = programa.nextInt();
+		
+		System.out.print("¿Cual es tu nota media?: ");
+		nota = programa.nextDouble();
+		
+		if ( edad >= 18) {
+			if ( nota>= 7) {
+				System.out.println("\nEnhorabuena " + nombre + " has sido admitido en el curso.");
+			} //else {
+				//System.out.println("\nLo sentimos " + nombre + ", no cumples los requisitos minimos"
+						//+ ", por lo que no has sido admitido en el curso.");
+			//} 
+		} else {
+			System.out.println("\nLo sentimos " + nombre + ", no cumples los requisitos minimos"
+					+ ", por lo que no has sido admitido en el curso.");
+		} 
+		
+		programa.close();
+		
+
+	}
+
+}
