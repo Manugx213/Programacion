@@ -1,5 +1,5 @@
 /* MANUEL GARCIA GARCIA
- * EJERCICIO 1
+ * EJERCICIO 4
  * 5/11/2025
  */
 
@@ -71,7 +71,7 @@ public class Ejercicio4
 			System.out.println("Lo sentimos, no has alcanzao los 300 euros este mes, no dispone de ningun descuento.");
 		}
 		
-		
+		programa.close();
 	}
 
 }
