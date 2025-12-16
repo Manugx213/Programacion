@@ -30,7 +30,7 @@ public class metodo1
 		
 		System.out.print ("\nEl resultado  de la operacion es: " + operacion (num1, operando, num2 ));
 		
-		
+		programa.close();
 
 	}
 	

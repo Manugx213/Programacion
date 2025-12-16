@@ -26,7 +26,6 @@ public class Ejercicio6 {
 			} else {
 				
 			}
-			
 			System.out.println("Estos números son positivos\n" + random);
 			System.out.println("Estos números son negativos\n "+ random);
 		}
