@@ -7,25 +7,34 @@ package GarciaManuel29;
 
 import java.util.Scanner;
 public class Ejercicio4 {
+	
+	
 
 	public static void main(String[] args) {
 		
-		int num = 0;
-		int num1 = 0;
 		
 		Scanner entrada = new Scanner (System.in);
+		
+		int num = 0;
 		
 		System.out.print("Introduce un número menor que 500: ");
 		num = entrada.nextInt();
 		
-		while (num1 <= num  ) {
-			num1++;
-			if (num1 <= num) {
-				System.out.printf("%-10d", num1);
-			}
-		}
+		
+		contador(num);
 		
 		entrada.close();
 	}
-
+	
+	
+	public static void contador (int num) {
+		int num1 = 0;
+		while (num1 <= num  ) {
+			num1++;
+			if (num1 <= num) {
+				System.out.printf("%-5d", num1);
+			}
+		}
+	}
 }
+

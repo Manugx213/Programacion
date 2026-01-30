@@ -1,33 +1,30 @@
 /* MANUEL GARCIA GARCIA
  * 27/11/2025
- * EJERCICIO 5
+ * EJERCICIO 6
  */
 
 package GarciaManuel29;
+
 
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
 		
-		double positivos = 0, negativos= 0;
-		double resultado = 0;
-		int contador = 0;
+		int random = 0;
+		int contadorPositivos = 0;
+		int contadorNegativos = 0;
 		
-		for (int num = -50 ; num < 50; num++) {
+		for (int i = 0; i < 50; i++) {
+			random = (int) (Math.random()*200) -100;
 			
-			contador++;
-			
-			double min = Math.ceil(-50);
-			double max = Math.floor(50);
-			double random = Math.floor(Math.random() * (max - min + 1)) + min;
-			
-			if (random >0) {
-				
+			if (random >= 0) {
+				contadorPositivos++;
 			} else {
-				
-			}
-			System.out.println("Estos números son positivos\n" + random);
-			System.out.println("Estos números son negativos\n "+ random);
+				contadorNegativos++;
+			}	
 		}
+		
+		System.out.println("Existen " + contadorPositivos + " números positivos");
+		System.out.println("Total de números : " + contadorNegativos + " números negativos");
 	}
 }
