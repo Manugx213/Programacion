@@ -53,19 +53,35 @@ public class GarciaManuelExamen5 {
 		return persona;
 	}
 	
-	// MOSTRAMOS EL TOTAL DE PRODUCCION POR PERSONA
+	// MOSTRAMOS EL TOTAL DE PRODUCCION POR DIA 
+	public static void mostrarUnidadesTotalesDia (int[][] m, String[] s) {
+		
+	
+		for (int i = 0; i < m.length; i++) {
+		
+			for (int j = 0; j < m[i].length; j++) {
+				
+			}
+		}
+	}
+		
+	
+	
+	
+	
+	// MOSTRAMOS EL TOTAL DE PRODUCCION POR DIA
 	public static void mostrarUnidadesTotalesPersona (int[][] m, String[] p) {
 		
 		int totalProduccion = 0;
 		int totalProduccionPersona = 0;
-		String nombrePersona = " ";
+		String persona = " ";
 		for (int i = 0; i < m.length; i++) {			
 			totalProduccionPersona = totalProduccion;
 			for (int j = 0; j < m[i].length; j++) {	
-				nombrePersona = p[i];
+				persona = p[i];
 				totalProduccion = totalProduccion + m[i][j];
 			}
-			System.out.printf("\n%s ha producido un total de %d unidades en total", nombrePersona, (totalProduccion - totalProduccionPersona));
+			System.out.printf("\n%s ha producido un total de %d unidades.", persona, (totalProduccion - totalProduccionPersona));
 		}
 	}
 	
@@ -81,16 +97,7 @@ public class GarciaManuelExamen5 {
 		System.out.print("-----------------------------------------");
 		mostrarUnidadesTotalesPersona (matrizUnidades, persona);
 		System.out.println("\n-----------------------------------------");
+		mostrarUnidadesTotalesDia (matrizUnidades, semana);
 		
-		int total = 0;
-		int mediaDiaria = 0;
-		String dia = " ";
-		
-		
-		for (int i = 0; i < matrizUnidades.length; i++) {
-			total = total + matrizUnidades[i][0]; 	
-			}
-			System.out.println(dia + total);
-		}
-		
+	}	
 }
