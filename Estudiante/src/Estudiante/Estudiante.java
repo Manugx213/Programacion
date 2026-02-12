@@ -2,6 +2,7 @@
 
 package Estudiante;
 
+
 // CREACION DE LA CLASE //
 public class Estudiante {
 	
@@ -18,15 +19,31 @@ public class Estudiante {
 	}
 	
 	// METODOS //
-	public boolean es_mayor_de_edad() {
-
-		if (this.edad >= 18) {
-			return true;
+	// INDICA SI UN ESTUDIANTE ES MAYOR DE EDAD //
+	public boolean esMayorEdad() {
+		
+		if (edad >= 18) {
+			return true;	
 		}else {
 			return false;
 		}
 	}
+	// IMPRIME EL NOMBRE DEL ESTUDIANTE, LA EDAD, Y SI ES MAYOR DE EDAD O NO //
+	public void mostrarEdad() {
+		if (this.esMayorEdad()) {
+			System.out.printf("%s es mayor de edad, tiene %d años\n\n", this.nombre, this.edad);
+		}else {
+			System.out.printf("%s no es mayor de edad, tiene %d años\n\n", this.nombre, this.edad);
+		}
+	}
 	
+	// CAMBIO DE CARRERA //
+	public String cambiarCarrera (String nuevaCarrera) {
+		setCarrera(nuevaCarrera);
+		return nuevaCarrera;
+	}
+	
+
 	// GETTERS //
 	public String getNombre() {
 		return this.nombre;
@@ -42,18 +59,27 @@ public class Estudiante {
 	
 	// SETTERS //
 	public void setNombre(String nuevoNombre) {
-		this.nombre = nombre;
+		this.nombre = nuevoNombre;
 	}
 	
 	public void setCarrera(String nuevaCarrera) {
-		this.carrera = carrera;
+		this.carrera = nuevaCarrera;
 	}
 	
 	public void setEdad(int nuevaEdad) {
-		this.edad = edad;
+		this.edad = nuevaEdad;
 	}
  	
 	
+	public String toString() {
+		return String.format (
+				"Nombre = %s\nEdad = %d\nCarrera = %s",
+					this.nombre,
+					this.edad,
+					this.carrera
+				);
+		
+	}
 }
 	
 			
